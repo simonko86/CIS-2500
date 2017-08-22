@@ -1,0 +1,47 @@
+*************************
+Simon Ko	0906762
+CIS2500		Assignment 3
+3/12/2016	Due: 3/13/2016
+*************************
+
+**********
+Compilation
+**********
+
+Use makefile, by compiling with "make" in the terminal
+OR
+Compile with gcc src/main.c src/rogueGame.c src/parse.c src/draw.c -std=c99 -Iinclude -Wall -lncurses
+
+
+
+**********
+Running the Program(s)
+**********
+
+Run with ./a.out assets/room.txt
+
+**********
+Testing
+**********
+
+The hallways are designed so that room 1 connects to room 4, room 2 to room 5 and room 3 to room 6.
+The cursor cannot escape the hallways except on into doors
+Too many of 1 item, moves that item into the next member in the struct
+Too many levels in the data file causes a seg fault.
+If an item is outside the room, the item is still printed.
+The monster only moves when the next position is a floor. Anything else is avoided.  It means the monster cannot pick up items nor escape from their rooms
+
+**********
+Known Limitations
+**********
+
+When fighting a monster, the monster, can end up being pushed into a different path if monster move onto the same spot as the hero is on and neither die.  This is because there is no combat when the moster moves onto the hero, only when the hero moves onto the monster.
+The doors end up being replaced with a '.' if exiting or a '#' if leaving. I couldn't figure out how to make it better.
+Caps lock means nothing happens, even when pressing 'A', 'S', 'D', 'W' and 'Q'
+Pressing another button except a,w,s,d and q causes the cursor to look like a '.', but when moved, the '@',hero, moves like normal
+
+**********
+References
+**********
+
+None

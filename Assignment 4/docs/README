@@ -1,0 +1,43 @@
+
+
+*************************
+Simon Ko	0906762
+CIS2500		Assignment 4
+4/3/2016	Due: 4/3/2016
+*************************
+
+**********
+Compilation
+**********
+
+Use makefile:
+To make test, type make test.
+To make tracker, type make tracker.
+
+
+
+**********
+Running the Program(s)
+**********
+
+Run with ./example
+Run with ./tracker assets/test.csv
+
+**********
+Testing
+**********
+
+Test each function with using a test harness. Input incorrect values as well as correct ones to make sure each function works
+
+
+**********
+Known Limitations
+**********
+
+getLastItem doesn't always work
+
+**********
+References
+**********
+
+None

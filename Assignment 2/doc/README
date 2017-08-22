@@ -1,0 +1,45 @@
+*************************
+Simon Ko	0906762
+CIS2500		Assignment 2
+2/16/2016	Due: 2/17/2016
+*************************
+
+**********
+Compilation
+**********
+
+Compile with gcc src/main.c src/rogueGame.c src/parse.c src/draw.c -std=c99 -Iinclude -Wall -lncurses
+
+OR
+
+Use makefile, by compiling with "make" in the terminal
+
+**********
+Running the Program(s)
+**********
+
+Run with ./a.out assets/room.txt
+
+**********
+Testing
+**********
+
+The cursor cannot escape the walls except on into doors
+When moving from door to door, the game checks if there is a North door as a priority. Then the South, West and East doors. If there is no door for that room, the hero moves back to the first room.
+Too many of 1 item, moves that item into the next member in the struct
+Too many levels in the data file causes a seg fault.
+If an item is outside the room, the item is still printed
+
+**********
+Known Limitations
+**********
+
+The weak monsters are all the same in the game, but they are random when you start the game
+Caps lock means nothing happens, even when pressing 'A', 'S', 'D', 'W' and 'Q'
+Pressing another button except a,w,s,d and q causes the cursor to look like a '.', but when moved, the '@',hero, moves like normal
+
+**********
+References
+**********
+
+None
